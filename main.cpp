@@ -60,11 +60,11 @@ int main() {
     ComPtr<ID3D12Device> device;
     CheckHR(D3D12CreateDevice(adapter.Get(), D3D_FEATURE_LEVEL_12_0, IID_PPV_ARGS(&device)));
 
-    D3D12_FEATURE_DATA_SHADER_MODEL shaderModel = { D3D_SHADER_MODEL_6_9 };
-    if (FAILED(device->CheckFeatureSupport(D3D12_FEATURE_SHADER_MODEL, &shaderModel, sizeof(shaderModel)))) {
-        std::cerr << "Shader Model 6.9 is not supported by the current driver." << std::endl;
-        return EXIT_FAILURE;
-    }
+    // D3D12_FEATURE_DATA_SHADER_MODEL shaderModel = { D3D_SHADER_MODEL_6_9 };
+    // if (FAILED(device->CheckFeatureSupport(D3D12_FEATURE_SHADER_MODEL, &shaderModel, sizeof(shaderModel)))) {
+    //     std::cerr << "Shader Model 6.9 is not supported by the current driver." << std::endl;
+    //     return EXIT_FAILURE;
+    // }
 
     // Create a command queue
     D3D12_COMMAND_QUEUE_DESC queueDesc = {};
