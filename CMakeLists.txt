@@ -12,8 +12,8 @@ set(CMAKE_GENERATOR_PLATFORM x64)
 
 
 # Add the source file
-add_executable(DX12VectorAdd VectorMulAdd.cpp)
-# add_executable(DX12VectorAdd main.cpp)
+# add_executable(DX12VectorAdd VectorMulAdd.cpp)
+add_executable(DX12VectorAdd main.cpp)
 
 # Include DirectX 12 and Windows headers
 find_path(DIRECTX_INCLUDE_DIR d3d12.h)
