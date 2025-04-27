@@ -8,7 +8,7 @@
 #include <d3dcompiler.h>
 #include <dxcore.h> // Include for experimental features
 
-#include "util.h"
+#include "include/util.h"
 
 using namespace Microsoft::WRL;
 
